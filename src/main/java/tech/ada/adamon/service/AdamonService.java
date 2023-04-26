@@ -25,4 +25,6 @@ public class AdamonService {
     public Adamon encontrarAdamonPorId(Long idAdamon) {
         return adamonRepository.findById(idAdamon).orElseThrow(() -> new RuntimeException("Não encontrado cliente"));
     }
+
+    
  }

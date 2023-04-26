@@ -21,7 +21,7 @@ public class TestUtils {
         return Arrays.asList(adamon, adamon1, adamon2, adamon3, adamon4, adamon5);
     }
 
-    public static Adamon obterAdamon() {
+    public static Adamon obterAdamon1() {
         Adamon adamon = new Adamon();
         adamon.setDefesa(30);
         adamon.setAtaque(50);
@@ -31,6 +31,19 @@ public class TestUtils {
         adamon.setVida(80);
         adamon.setNome("Adachu");
         adamon.setUrlFoto("www.foto.com.br/adachu");
+        return adamon;
+    }
+
+    public static Adamon obterAdamon2() {
+        Adamon adamon = new Adamon();
+        adamon.setDefesa(50);
+        adamon.setAtaque(40);
+        adamon.setVelocidade(38);
+        adamon.setInteligencia(60);
+        adamon.setPoder(20);
+        adamon.setVida(64);
+        adamon.setNome("MikeChu");
+        adamon.setUrlFoto("www.foto.com.br/mikechu");
         return adamon;
     }
 
@@ -50,5 +63,8 @@ public class TestUtils {
         } catch (Exception e) {
             throw new RuntimeException("Não foi possível converter o objeto");
         }
+    }
+    public static List<Adamon> encontrarAdamonPorId() {
+        return null;
     }
 }

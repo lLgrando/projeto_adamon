@@ -30,4 +30,5 @@ public class JogadorController {
     public Jogador criarNovoJogador(@RequestBody SalvarJogadorDTO dto) {
         return jogadorService.salvarJogador(dto);
     }
+
 }
